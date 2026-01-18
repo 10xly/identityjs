@@ -10,6 +10,7 @@ var identityfunction = require("identity-function")
 var isFinite = require("@is-(unknown)/is-finite")
 var isString = require("@is-(unknown)/is-string")
 var asyncUtilIdentity = require("async.util.identity")
+var id = require("js-id")
 
 function identityCore(value) {
   if (isString(value)) {
@@ -33,7 +34,7 @@ function identity(value) {
   return identityfunction(
     vretriever.retrieve(
       isuseless(
-        asyncUtilIdentity(stdlibIdentity(fIdentity(lodashIdentity(identityCore(value))))),
+        id(asyncUtilIdentity(stdlibIdentity(fIdentity(lodashIdentity(identityCore(value)))))),
         falsevalue,
         falsevalue
       )
