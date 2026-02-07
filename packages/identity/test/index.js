@@ -12,6 +12,18 @@ describe('identity()', () => {
     const input = 3.2
     assert.strictEqual(identity(input), 3.2, "The function should return 3.2")
   })
+
+  it('should return the same negative number that was passed in', () => {
+    const input = -5
+    assert.strictEqual(identity(input), -5, 'The function should return the number -5.')
+  })
+
+  it('should return -0 when -0 is passed in', () => {
+    const input = -0
+    const result = identity(input)
+    assert.strictEqual(result, -0, 'The function should return -0.')
+    assert.isTrue(Object.is(result, -0), 'The function should return the exact value of -0.')
+  })
   
   it('should return the same string that was passed in', () => {
     const input = 'hello world'

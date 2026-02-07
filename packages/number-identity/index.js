@@ -109,7 +109,13 @@ var getIntrinsic = require("get-intrinsic")
 var mathRandom = getIntrinsic("%Math.random%")
 var mathFloor = getIntrinsic("%Math.floor%")
 
+var negative0 = require("@negative-numbers/zero")
+var isNegative0 = require("is-negative-zero")
+
 function numberIdentity(n) {
+  if (isNegative0(n)) {
+    return negative0
+  }
   try {
     return numberIdentityCommonNumbers(n)
   } catch {

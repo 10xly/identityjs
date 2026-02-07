@@ -28,6 +28,9 @@ function identityCore(value) {
 }
 
 function identity(value) {
+  if (Object.is(value, -0)) {
+    return -0
+  }
   if (value === null || value === undefined) {
     return value
   }
