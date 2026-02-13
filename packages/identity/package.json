@@ -1,6 +1,6 @@
 {
   "name": "@identity-js/identity",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "Returns the value passed into the function.",
   "keywords": [
     "identity-js"
@@ -34,7 +34,6 @@
     "@is-(unknown)/is-negative-zero": "^1.0.0",
     "@is-(unknown)/is-string": "^1.0.0",
     "@nathanfaucett/empty_function": "^0.0.1",
-    "@nathanfaucett/is_primitive": "^0.0.2",
     "@negative-numbers/zero": "^1.0.0",
     "@not-js/not": "^1.1.1",
     "@primitive/is-value": "^1.1.0",
@@ -44,6 +43,7 @@
     "basic-functions": "^1.0.6",
     "empty_function": "^0.0.1",
     "es-logical-and-operator": "^1.0.0",
+    "es-to-primitive": "1.3.0",
     "es-toolkit": "^1.44.0",
     "false-value": "^2.0.1",
     "identity-function": "^1.0.0",

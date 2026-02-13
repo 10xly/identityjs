@@ -1,4 +1,4 @@
-var isPrimitive = require("@nathanfaucett/is_primitive")
+var isPrimitive = require("es-to-primitive/helpers/isPrimitive")
 var primitiveIdentity = require("primitive-identity-function")
 
 module.exports = function identityPrimitiveSafe(x) {
