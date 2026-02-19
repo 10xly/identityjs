@@ -27,7 +27,6 @@
     "@10xly/strict-equals": "^1.0.1",
     "@elastic/lodash": "^3.10.1-kibana4",
     "@f/identity": "^1.1.1",
-    "@identity-js/identity": "^1.2.9",
     "@identity-js/number-identity": "^1.2.3",
     "@identity-js/string-identity": "^1.1.3",
     "@is-(unknown)/is-finite": "^1.0.0",
