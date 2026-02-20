@@ -1,9 +1,7 @@
 const identityFunctions = [
   require("@-ft/i").I,
   require("return-value").returnValue,
-  require("@identity-js/identity"),
   require("identity-function"),
-  require("lolite.identity"),
   require("lodash.identity"),
   require("ramda.identity"),
   require("@ramda/identity"),
