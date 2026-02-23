@@ -2,7 +2,7 @@
 
 ## What's this?
 
-This project provides a robust, highly modular, and massively dependent implementation of the simple string identity function (`f(x) = x`). We believe in the principle of **10x Engineering**: why use a single line of JavaScript when you can use hundreds of independently published packages? Learn more at [the 10x'ly Website](https://10xengineersqualityprogramming.github.io) today.
+This project provides a robust, highly modular, and massively dependent implementation of the simple string identity function (`f(x) = x`). We believe in the principle of **10x Engineering**: why use a single line of JavaScript when you can use hundreds of independently published packages?
 
 This package is part of [identity.js](https://github.com/10xEngineersQualityProgramming/identity)
 
