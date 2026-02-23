@@ -4,7 +4,7 @@ Introducing Identity.js, the 10x identity function.
 
 The identity function, $I(x)$, is a mathematical function that always returns the same value that was used as its argument, i.e., $I(x) = x$. This utility is often used in functional programming paradigms.
 
-At [10x'ly](https://10xengineersqualityprogramming.github.io), we are always looking for new opportunities to make 10x libraries and then it struck us: what about an identity function? This package spreads **10x'ness** into the simple concept of an identity function. It's not just an identity function, it's a **10x identity function**.
+At 10x'ly made, we are always looking for new opportunities to make 10x libraries and then it struck us: what about an identity function? This package spreads **10x'ness** into the simple concept of an identity function. It's not just an identity function, it's a **10x identity function**.
 
 ## 💾 Installation
 
@@ -18,20 +18,22 @@ npm install @identity-js/identity
 
 The function accepts a single argument of any type and returns that argument unchanged.
 
-### Importing
-
 ```javascript
-const identity = require("@identity-js/identity"); 
+const identity = require("@identity-js/identity")
 ```
 
-### Examples
+Identity.js also has an unstable version that uses deasyncing `Promise.resolve`. It is called unstable because this is a weird hack. You can use it instead if you want:
 
-| Input Type | Code | Output |
-| :--- | :--- | :--- |
-| **Number** | `identity(42)` | `42` |
-| **String** | `identity('hello')` | `'hello'` |
-| **Object** | `const obj = {a: 1}; identity(obj)` | `// returns the same object reference: {a: 1}` |
-| **Null** | `identity(null)` | `null` |
+```javascript
+const identity = require("@identity-js/identity/unstable")
+```
+
+Then you can just call it with a value and it will return that value:
+```javascript
+const identity = require("@identity-js/identity")
+
+console.log(identity("hello world")) // "hello world"
+```
 
 ## ✅ Testing
 

@@ -1,4 +1,4 @@
-const identityFunctions = [
+module.exports = [
   require("@-ft/i").I,
   require("return-value").returnValue,
   require("identity-function"),
@@ -21,16 +21,5 @@ const identityFunctions = [
   require("async.util.identity"),
   require("identity-function"),
   require("js-id"),
-  require("./primitive")
+  require("./primitive"),
 ]
-
-function identity(x) {
-  for (const fn of identityFunctions) {
-    if ((require("lodash").stubObject()).constructor.is(fn(x), x)) {
-      x = fn(x)
-    }
-  }
-  return x
-}
-
-module.exports = identity
