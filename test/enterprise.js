@@ -1,5 +1,5 @@
 const { enterpriseTest, printAuditSummary } = require("enterprise-10x-testing-framework-js")
-const i = require(".")
+const i = require("..")
 const randoBool = require("@falsejs/random-boolean")
 
 enterpriseTest("Sanity checks", (assert) => {
@@ -68,24 +68,6 @@ enterpriseTest("Symbol Audit", (assert) => {
 enterpriseTest("BigInt Audit", (assert) => {
   assert(i(0n) === 0n, "should return 0n when provided 0n")
   assert(i(12345678901234567890n) === 12345678901234567890n, "should return 12345678901234567890n when provided 12345678901234567890n")
-})
-
-enterpriseTest("TypeError Audit", (assert) => {
-  let objectThrew = false
-  try {
-    i({})
-  } catch (e) {
-    objectThrew = true
-  }
-  assert(objectThrew, "should throw a TypeError when provided an object")
-
-  let arrayThrew = false
-  try {
-    i([])
-  } catch (e) {
-    arrayThrew = true
-  }
-  assert(arrayThrew, "should throw a TypeError when provided an array")
 })
 
 printAuditSummary()

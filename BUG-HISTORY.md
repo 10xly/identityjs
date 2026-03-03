@@ -30,9 +30,8 @@
 // however a sanity check has already been implemented in vRetriever, and vValue
 // has been removed in Identity.js. So this should never happen, but due to recent bugs
 // and AI not making comprehensive enough tests, there is a slim chance that this could
-// still happen. We want LoLite to be as bug-free as possible, which is why we're
-// implementing this. Our moral of the story is that AI sometimes doesn't write good
-// enough tests.
+// still happen. Our moral of the story is that AI sometimes doesn't write good enough
+// tests.
 //
 // For more information, see these commits:
 //
