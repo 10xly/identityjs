@@ -40,7 +40,7 @@ console.log(identity("hello world")) // "hello world"
 Tests are written using **Mocha**.
 
 ### Prerequisites
-Clone this repository, cd into `packages/identity` and install dependencies and dev-dependencies.
+Clone this repository and install dependencies and dev-dependencies.
 
 ### Running Tests
 
