@@ -580,6 +580,8 @@
     "@falsejs/random-boolean": "^1.0.4",
     "chai": "^6.2.1",
     "enterprise-10x-testing-framework-js": "^1.0.1",
-    "mocha": "^11.7.5"
+    "mocha": "^11.7.5",
+    "@10xly/eslint-config": "*",
+    "eslint": "^9.39.3"
   }
 }
