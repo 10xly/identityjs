@@ -1,3 +1,4 @@
+/* eslint-disable */
 const { enterpriseTest, printAuditSummary } = require("enterprise-10x-testing-framework-js")
 const i = require("..")
 const randoBool = require("@falsejs/random-boolean")

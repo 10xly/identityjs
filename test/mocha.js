@@ -1,16 +1,8 @@
+/* eslint-disable */
 const assert = require("chai").assert
 const identityStable = require("../index")
-const identityUnstable = require("../unstable")
 
 function testIdentity(identity) {
-  if (identity === identityUnstable) {
-    var originalIt = it
-    it = function(x, fn) {
-      if (Math.random() < 0.1) {
-        originalIt(x, fn)
-      }
-    }
-  }
   describe("identity()", () => {
     it("should return the same number that was passed in", () => {
       const input = 42
@@ -2268,4 +2260,3 @@ function testIdentity(identity) {
 }
 
 testIdentity(identityStable)
-testIdentity(identityUnstable)
